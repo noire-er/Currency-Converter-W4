@@ -9,7 +9,7 @@ def currency_converter(amount, from_currency, to_currency):
     if amount < 0:
         return 0.0
     
-    if from_currency = to_currency:
+    if from_currency == to_currency:
         return round(amount, 2)
     
     currencyRate = conversion_rate.get(from_currency, {}).get(to_currency)
